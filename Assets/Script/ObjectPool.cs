@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    private static ObjectPool _instansce;
+    private static ObjectPool _instance;
     public static ObjectPool Instance 
     {
         get
         {
-            if (_instansce == null)
+            if (_instance == null)
             {
-                _instansce = FindObjectOfType<ObjectPool>();
+                _instance = FindObjectOfType<ObjectPool>();
             }
-            return _instansce;
+            return _instance;
         }
     }
     private List<GameObject> _poolList = new List <GameObject> ();// Danh sach chua cac thanh phan
