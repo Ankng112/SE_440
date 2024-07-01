@@ -13,7 +13,6 @@ public class HPView : MonoBehaviour
     void Start()
     {
         _slider = GetComponent<Slider>();
-        
 
     }
 
