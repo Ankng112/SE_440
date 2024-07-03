@@ -11,6 +11,7 @@ public class SingleTon<T> : MonoBehaviour where T : SingleTon<T>
 
     private void Awake() 
     {
+        transform.position = Vector3;
         Debug.Log("Hello");
         if (_instance == null)
         {
