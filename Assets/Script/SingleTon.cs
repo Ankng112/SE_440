@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SingleTon<T> : MonoBehaviour where T : SingleTon<T>
 {
+    //DAY LA YEN NE MA
    private static T _instance;
    public static T Instance => _instance;
    [SerializeField] private bool isDontDestroyOnload;
